@@ -187,8 +187,11 @@
 (use-package guide-key
   :diminish guide-key-mode
   :init (guide-key-mode 1)
-  :config (setq guide-key/guide-key-sequence '("C-x r" "C-x 4"
-                                               (allout-mode "C-c SPC"))))
+  :config
+  (setq guide-key/guide-key-sequence
+        '("C-x r" "C-x 4"
+          (allout-mode "C-c SPC")
+          (popwin-mode "C-x p"))))
 ;;;_ , highlight-symbol
 
 (use-package highlight-symbol
@@ -253,6 +256,11 @@
       (jump-to-register :magit-fullscreen))
 
     (bind-key "q" 'magit-quit-session magit-status-mode-map)))
+;;;_ , popwin
+
+(use-package popwin
+  :init (popwin-mode 1)
+  :config (bind-key "C-x p" popwin:keymap))
 ;;;_ , project-explorer
 
 (use-package project-explorer
