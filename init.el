@@ -122,6 +122,7 @@
 ;;;_ , anzu
 
 (use-package anzu
+  :diminish anzu-mode
   :init (global-anzu-mode 1))
 ;;;_ , auto-complete
 
