@@ -185,9 +185,10 @@
   :init (guide-key-mode 1)
   :config
   (setq guide-key/guide-key-sequence
-        '("C-x r" "C-x 4"
+        '("C-x r" "C-x 4" "C-x 5" "M-s"
           (allout-mode "C-c SPC")
-          (popwin-mode "C-x p"))))
+          (popwin-mode "C-x p")
+          (projectile-mode "C-c p"))))
 ;;;_ , highlight-symbol
 
 (use-package highlight-symbol
