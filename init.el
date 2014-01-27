@@ -7,8 +7,7 @@
                 tool-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
 
-(dolist (mode '(column-number-mode
-                show-paren-mode))
+(dolist (mode '(column-number-mode))
   (when (fboundp mode) (funcall mode 1)))
 
 (require 'cask "~/.cask/cask.el")
@@ -325,7 +324,10 @@
 
 (use-package smartparens-config
   :diminish smartparens-mode
-  :init (smartparens-global-mode t))
+  :init
+  (progn
+    (smartparens-global-mode 1)
+    (show-smartparens-global-mode 1)))
 ;;;_ , smex
 
 (use-package smex
