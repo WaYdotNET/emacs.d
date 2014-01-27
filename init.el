@@ -44,12 +44,6 @@
   (if (= (point) (progn (back-to-indentation) (point)))
       (beginning-of-line)))
 
-(defun backward-kill-word-or-kill-region (&optional arg)
-  (interactive "p")
-  (if (region-active-p)
-      (kill-region (region-beginning) (region-end))
-    (backward-kill-word arg)))
-
 (defun delete-current-buffer-file ()
   "Removes file connected to current buffer and kills buffer."
   (interactive)
@@ -81,6 +75,10 @@
                    name (file-name-nondirectory new-name)))))))
 ;;;_. Keybindings
 
+(define-key key-translation-map [?\C-h] [?\C-?])
+(bind-key "<f1>" 'help-command)
+(bind-key "M-h" 'backward-kill-word)
+
 (bind-key "C-S-p" '(lambda ()
                      (interactive)
                      (ignore-errors (previous-line 5))))
@@ -97,7 +95,6 @@
 (bind-key "C-+" 'text-scale-increase)
 (bind-key "C--" 'text-scale-decrease)
 (bind-key "C-a" 'back-to-indentation-or-beginning)
-(bind-key "C-w" 'backward-kill-word-or-kill-region)
 (bind-key "C-x @" 'save-buffers-kill-terminal)
 (bind-key "C-x C-c" nil)
 (bind-key "C-x C-k" 'delete-current-buffer-file)
