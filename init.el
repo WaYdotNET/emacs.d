@@ -22,6 +22,7 @@
 (setq echo-keystrokes 0.1)
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
+(setq mouse-wheel-progressive-speed nil)
 (setq require-final-newline t)
 (setq ring-bell-function 'ignore)
 
