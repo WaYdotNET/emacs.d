@@ -231,10 +231,6 @@
   (progn
     (setq jedi:setup-keys t)
     (setq jedi:complete-on-dot t)))
-;;;_ , json-mode
-
-(use-package json-mode
-  :mode "\\.json\\'")
 ;;;_ , magit
 
 (use-package magit
@@ -369,10 +365,6 @@
   :bind (("M-P" . winner-undo)
          ("M-N" . winner-redo))
   :init (winner-mode 1))
-;;;_ , yaml-mode
-
-(use-package yaml-mode
-  :mode "\\.ya?ml\\'")
 ;;;_. Post initialization
 
 (load-theme 'spolsky t)
