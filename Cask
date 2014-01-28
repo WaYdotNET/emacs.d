@@ -11,6 +11,7 @@
 (depends-on "fic-mode")
 (depends-on "flycheck")
 (depends-on "git-auto-commit-mode")
+(depends-on "gitconfig-mode")
 (depends-on "guide-key")
 (depends-on "highlight-symbol")
 (depends-on "ido-ubiquitous")
