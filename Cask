@@ -29,6 +29,7 @@
 (depends-on "smart-mode-line")
 (depends-on "smartparens")
 (depends-on "smex")
+(depends-on "solarized-theme")
 (depends-on "sublime-themes")
 (depends-on "undo-tree")
 (depends-on "use-package")
