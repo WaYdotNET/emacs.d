@@ -369,7 +369,7 @@
 ;;;_. Post initialization
 
 (load-theme 'spolsky t)
-(load custom-file)
+(load custom-file 'noerror)
 
 ;; Local Variables:
 ;;   allout-layout: 0
