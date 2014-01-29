@@ -4,6 +4,7 @@
 (depends-on "anzu")
 (depends-on "auto-complete")
 (depends-on "base16-theme")
+(depends-on "bind-key")
 (depends-on "browse-kill-ring")
 (depends-on "column-marker")
 (depends-on "elisp-slime-nav")
