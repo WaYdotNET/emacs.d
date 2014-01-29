@@ -11,6 +11,7 @@
 (depends-on "fic-mode")
 (depends-on "flycheck")
 (depends-on "git-auto-commit-mode")
+(depends-on "git-messenger")
 (depends-on "gitconfig-mode")
 (depends-on "gitignore-mode")
 (depends-on "guide-key")
