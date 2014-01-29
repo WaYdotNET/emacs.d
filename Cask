@@ -22,6 +22,7 @@
 (depends-on "jedi")
 (depends-on "json-mode")
 (depends-on "magit")
+(depends-on "nginx-mode")
 (depends-on "popwin")
 (depends-on "project-explorer")
 (depends-on "projectile")
