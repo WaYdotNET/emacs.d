@@ -22,6 +22,7 @@
 (depends-on "idomenu")
 (depends-on "indent-guide")
 (depends-on "jedi")
+(depends-on "js2-mode")
 (depends-on "json-mode")
 (depends-on "magit")
 (depends-on "nginx-mode")

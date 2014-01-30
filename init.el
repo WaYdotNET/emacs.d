@@ -232,6 +232,10 @@
   (progn
     (setq jedi:setup-keys t)
     (setq jedi:complete-on-dot t)))
+;;;_ , js2-mode
+
+(use-package js2-mode
+  :mode "\\.js\\'")
 ;;;_ , magit
 
 (use-package magit
