@@ -213,20 +213,6 @@
   :commands jedi:setup
   :init
   (progn
-    (defun my-jedi-run-make-requirements ()
-      (let* ((make (or (executable-find "make")
-                       (error "Unable to find `make'")))
-             (is-installed (package-installed-p 'jedi))
-             (version (package-version-join
-                       (elt (cdr (assoc 'jedi package-alist)) 0)))
-             (default-directory (file-name-as-directory
-                                 (package--dir "jedi" version)))
-             (is-configured (file-exists-p
-                             (expand-file-name "env/" default-directory))))
-        (when (and is-installed (not is-configured))
-          (call-process make nil nil nil "requirements"))))
-
-    (my-jedi-run-make-requirements)
     (add-hook 'python-mode-hook 'jedi:setup))
   :config
   (progn
