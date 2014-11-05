@@ -18,13 +18,15 @@
 ;;;_. General settings
 
 (setq auto-save-list-file-prefix "~/.emacs.d/.auto-save-list/.saves-")
-(setq custom-file "~/.emacs.d/custom.el")
 (setq echo-keystrokes 0.1)
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
 (setq mouse-wheel-progressive-speed nil)
 (setq require-final-newline t)
 (setq ring-bell-function 'ignore)
+
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file 'noerror)
 
 ;; Backups
 (setq backup-by-copying t)
@@ -359,7 +361,6 @@
 ;;;_. Post initialization
 
 (load-theme 'spolsky t)
-(load custom-file 'noerror)
 
 ;; Local Variables:
 ;;   allout-layout: 0
