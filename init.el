@@ -10,7 +10,7 @@
 (dolist (mode '(column-number-mode))
   (when (fboundp mode) (funcall mode 1)))
 
-(require 'cask "~/.cask/cask.el")
+(require 'cask)
 (cask-initialize)
 
 (require 'use-package)
