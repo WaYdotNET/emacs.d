@@ -6,6 +6,7 @@
 /.places
 /.project-explorer-cache/
 /.projectile-bookmarks.eld
+/.python-environments/
 /.saves/
 /.smex-items
 /custom.el
