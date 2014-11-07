@@ -10,6 +10,7 @@
 (dolist (mode '(column-number-mode))
   (when (fboundp mode) (funcall mode 1)))
 
+(add-to-list 'load-path "~/.cask/")
 (require 'cask)
 (cask-initialize)
 
