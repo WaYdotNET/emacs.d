@@ -8,6 +8,7 @@
 (depends-on "browse-kill-ring")
 (depends-on "column-marker")
 (depends-on "elisp-slime-nav")
+(depends-on "esup")
 (depends-on "expand-region")
 (depends-on "fic-mode")
 (depends-on "flycheck")
